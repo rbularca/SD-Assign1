@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.url">jdbc:sqlserver://127.0.0.1:50896;integratedSecurity=true;databaseName=Assignment1</property>
+
+    <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+	<mapping resource="User.hbm.xml" />
+  </session-factory>
+</hibernate-configuration>
